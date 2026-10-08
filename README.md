@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 int main(){
+
   printf("   Jogo de Palpites  \n\n Tente adivinhar o numero entre 1 e 50\n\n");
+  
   int escolha, palpite;
   int numero_secreto = 29; 
   int jogador = 1;         
