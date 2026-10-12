@@ -8,16 +8,21 @@ int main(){
   int numero_secreto = 29; 
   int jogador = 1;         
 
-  for (;;) { 
-    printf("jogador %d digite o seu palpite: ", jogador);
+  while (palpite != numero_secreto) { 
+    printf("\n\njogador %d digite o seu palpite: ", jogador);
     scanf("%d", &palpite);
 
     if (palpite == numero_secreto) {
       printf("acertou, o jogador %d venceu!\n", jogador);
-        break;
+        }
+
+    if (palpite < numero_secreto){
+        printf("Mais para cima!");
+    }
+    else if (palpite > numero_secreto){
+        printf("Mais para baixo!");
     }
     jogador = 3 - jogador;
-    printf("errou, passou a vez.\n\n");
-  }
+          }
     printf("\n Fim de jogo! \n");
 }
