@@ -13,7 +13,7 @@ int main(){
     scanf("%d", &palpite);
 
     if (palpite == numero_secreto) {
-      printf("acertou, o jogador %d ganhou o jogo!\n", jogador);
+      printf("acertou, o jogador %d venceu!\n", jogador);
         break;
     }
     jogador = 3 - jogador;
