@@ -8,9 +8,15 @@ int main(){
   int numero_secreto = 29; 
   int jogador = 1;         
 
-  while (palpite != numero_secreto) { 
+    int tentativas = 0;
+    int max_tentativas = 10;
+
+  while (palpite != numero_secreto && tentativas < max_tentativas) { 
+      printf("\n\n[Tentativas restante: %d]", max_tentativas - tentativas);
     printf("\n\njogador %d digite o seu palpite: ", jogador);
     scanf("%d", &palpite);
+
+      tentativas = tentativas + 1;
 
     if (palpite == numero_secreto) {
       printf("acertou, o jogador %d venceu!\n", jogador);
