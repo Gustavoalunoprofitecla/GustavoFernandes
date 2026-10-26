@@ -1,12 +1,9 @@
 #include <stdio.h>
 
-int main(){
+int main() {
 
-    int contador, turma;
-    printf("\n\n Qual é o número de alunos?: ");
-    scanf ("%d", &turma);
-    int var[10]
-    while (contador<10)
-    var [turma];
-    printf("%d", var)
+int contador,turma;
+printf ("Qual é o número de alunos ?");
+scanf var ("%d,turma");   
+
 }
