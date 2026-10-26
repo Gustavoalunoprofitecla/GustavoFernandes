@@ -1,19 +1,18 @@
 #include <stdio.h>
-
-int main() {
-
+int main(){
 int contador,turma;
-printf ("Qual é o número de alunos ?");
-scanf var ("%d",turma); 
+    printf ("Qual é o número de alunos ?\n");
+    scanf ("%d", &turma);
+ 
+int var [turma];
+ contador=0;
 
-int var[turma];
+ while(contador!=turma)
+     {
+     var[contador]=contador+1;    
+         printf("var[%d", contador);
+         printf("]=%d",var[contador]);
+         contador++;
+     }
 
-var[0]=11;
-var[1]=22;
-var[2]=33;
-
-printf("%d",var[o]);
-printf("%d",var[1]);
-printf("%d",var[2]);
-
-}
+  }
